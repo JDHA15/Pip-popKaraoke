@@ -11,9 +11,19 @@
     <!-- FOrmulario para agregar canciones -->
 
     <form id="song_form">
+        <label for="song_name">Nombre de la canción</label>
         <input type="text" id="song_name" required>
+        <label for="artist_name">Nombre del artista</label>
         <input type="text" id="artist_name" required>
+        <label for="url_song">Ingresa el enlace de la canción</label>
         <input type="url" id="url_song" required>
+
+        <button type="submit">Agregar a la lista</button>
     </form>
+
+    <!-- Lista de canciones-->
+    <h2>LIsta de reproducción</h2>
+    <ul id="play_list"></ul>
 </body>
+<script src="main.js"></script>
 </html>
