@@ -10,7 +10,7 @@ function addSong(songName, artistName, songUrl) {
             <strong>${songName}</strong>
             -${artistName}
             <a href="${songUrl}" target ="_blank">Reproducir</a>
-            <button class="delete-btn">Eliminar</button>
+            <button class="delete-btn" onclick="eliminar()" type="reset">Eliminar</button>
     
     `;
     //Agregar al HTMl
@@ -31,5 +31,7 @@ songForm.addEventListener('submit', (event) => {
 
     addSong(songName,artistNanme, songUrl)
 
-    songForm.reset();
+    songForm.reset()
+    
+
 } )
