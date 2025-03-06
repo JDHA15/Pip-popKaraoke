@@ -7,20 +7,50 @@ h1{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-decoration: underline;
 }
-
+img{
+    margin-left: 575px;
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 1px 1px;
+}
 #song_form{
     background-color: springgreen;
-    text-align: center;
     margin-left: 300px;
     margin-right: 300px;
     border-radius:  20px;
-    box-shadow: 15px 15px blue;
+    box-shadow: 15px 15px rgba(8, 230, 108, 0.527);
+    padding: 10px;
 }
 label{
     display: block;
 }
+input{
+    width: 700px;
+}
 #form{
     display: block;
-    position: relative; bottom: 0px;left: 320px;
+    padding: 5px;
+    width: 700px;
+    background-color: chartreuse;
+    border-radius: 3px 3px;
     
+}
+footer{
+    background-color: chartreuse;
+    margin-left: -7px;
+    margin-right: -7px;
+    margin-bottom: -7px;
+    padding: 5px;
+    text-align: center;
+}
+#eliminar{
+    padding: 5px;
+    background-color: chartreuse;
+    border-radius: 3px 3px;
+}
+hr{
+    border: black solid 2px;
+}
+ul{
+    background-color: aquamarine;
 }

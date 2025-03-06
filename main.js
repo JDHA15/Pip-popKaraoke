@@ -10,11 +10,16 @@ function addSong(songName, artistName, songUrl) {
             <strong>${songName}</strong>
             -${artistName}
             <a href="${songUrl}" target ="_blank">Reproducir</a>
-            <button class="delete-btn" onclick="eliminar()" type="reset">Eliminar</button>
+            <button class="delete-btn" id="eliminar">Eliminar</button>
     
     `;
     //Agregar al HTMl
     playList.appendChild(listSong);
+
+    const deleteButton = document.querySelector('.delete-btn');
+    deleteButton.addEventListener('click', () =>{
+        listSong.remove();
+    });
 
 
 }
@@ -32,6 +37,6 @@ songForm.addEventListener('submit', (event) => {
     addSong(songName,artistNanme, songUrl)
 
     songForm.reset()
-    
-
 } )
+
+
